@@ -1,0 +1,27 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("thoughts")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+---
+
+<Base title="Thoughts" description="Writing about product, AI, and technology.">
+  <h1>Thoughts</h1>
+  <ul class="post-list">
+    {posts.map((post) => (
+      <li>
+        <span class="post-date">
+          {post.data.date.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+          })}
+        </span>
+        <br />
+        <a href={`/thoughts/${post.id}`}>{post.data.title}</a>
+      </li>
+    ))}
+  </ul>
+</Base>

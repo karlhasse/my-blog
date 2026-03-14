@@ -1,0 +1,52 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Product, AI and tech enthusiast." } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://example.com");
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="/">Home</a>
+        <a href="/thoughts">Thoughts</a>
+        <a href="/links">Links</a>
+        <a href="/bio">Bio</a>
+      </nav>
+
+      <main>
+        <slot />
+      </main>
+
+      <footer>
+        &copy; {new Date().getFullYear()}
+      </footer>
+    </div>
+  </body>
+</html>

@@ -61,4 +61,4 @@ Dies herauszufiltern — ohne fertiges Template, dafür mit Urteilsvermögen, Ku
 
 Kein LLM der Welt nimmt uns diese Arbeit ab. Das ist kein Defizit der Technologie. Es ist der exakte Grund, warum es unsere Rolle gibt.
 
-[^1]: 2026. https://factory.strongdm.ai/
+[^1]: Strong DM (2026) — https://factory.strongdm.ai/

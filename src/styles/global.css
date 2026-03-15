@@ -167,6 +167,10 @@ footer {
   color: #555;
 }
 
+.footnotes #footnote-label {
+  display: none;
+}
+
 .footnotes ol {
   padding-left: 20px;
 }

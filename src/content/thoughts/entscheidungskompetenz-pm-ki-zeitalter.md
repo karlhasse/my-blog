@@ -1,63 +1,63 @@
 ---
-title: "Code ist nicht mehr der Engpass — Entscheidungen sind es"
+title: "Code ist nicht mehr der Bottleneck — Entscheidungen sind es"
 date: 2026-03-14
-description: "Warum die strategische Kompetenz des Product Managers nicht im Bauen liegt, sondern im Entscheiden, was gebaut werden soll."
+description: "Warum die strategische Kompetenz des Product Managers nicht im Bauen liegt, sondern (immer noch) im Entscheiden, was gebaut werden soll."
 ---
 
-Ein LLM schreibt heute funktionierenden Code in Minuten. Ganze Firmen wie Strong DM verbieten ihren Engineers, Code selbst zu schreiben oder zu reviewen. Agenten nehmen menschenverfasste Roadmaps und setzen sie in Software um, testen sie in simulierten Kundenumgebungen. Die technische Umsetzung ist kein finanzielles und zeitliches Bottleneck mehr.
+Ein LLM schreibt heute funktionierenden Code in Minuten. Ganze Firmen wie Strong DM verbieten ihren Engineers, Code selbst zu schreiben oder zu reviewen. Agenten nehmen menschenverfasste Roadmaps, gießen sie in Software und testen sie in simulierten Umgebungen. Die technische Umsetzung ist kein finanzielles und zeitliches Bottleneck mehr.
 
-Und genau deshalb verschiebt sich der Wert entlang der Wertschöpfungskette — weg vom Code, hin zur Entscheidung darüber, was gebaut werden soll. Diese Entscheidungskompetenz wird zur dominanten strategischen Fähigkeit. Für Product Manager bedeutet das: Unsere Rolle wird nicht kleiner. Sie wird kritischer.
+Genau deshalb verschiebt sich der Wert entlang der gesamten Wertschöpfungskette und zwar weg vom Code, hin zur Entscheidung darüber, was überhaupt gebaut werden soll. Weil die Velocity des Outputs rasant steigt, muss der Filter davor umso rigoroser greifen. Auf einmal strömen Gewerke wie Marketing oder Sales mit selbstgebastelten Lösungen ins Meeting: ohne überprüfbare Hypothesen, saubere Problem-Identifikation oder einen Blick für die Business Viability. Der Product Manager (PM) muss wachsamer evaluieren und argumentieren als je zuvor. Diese Entscheidungs- und Führungskompetenz wird zur dominanten strategischen Fähigkeit. Für PMs bedeutet das: die Rolle wird nicht kleiner oder gar obsolet. Sie wird noch kritischer.
 
 ## Drei Konsequenzen, die daraus folgen
 
-Wenn Implementierung billig wird, werden drei Dinge teuer: schlechte Priorisierung, fehlende Orchestrierungskompetenz und der Verlust von Nachwuchs, der morgen die richtigen Urteile fällen soll.
+Wenn Implementierung billig wird, werden drei Dinge unbezahlbar teuer: schlechte Priorisierung, fehlende Orchestrierungskompetenz und der kurzsichtige Irrglaube, man müsse nicht mehr in Juniors investieren. Ein Sparkurs, der das kritische Denken von morgen systematisch aus dem Unternehmen streicht.
 
 ## 1. Der PM entscheidet, das LLM implementiert
 
-Ich arbeite als generalistischer Product Manager. Mein Job war schon immer, herauszuarbeiten, was den größten Wert erzeugt. Das hat sich nicht geändert. Was sich geändert hat: Die Kosten einer falschen Entscheidung sind relativ gesunken, weil die Umsetzung günstiger geworden ist — aber die Frequenz der Entscheidungen hat sich vervielfacht. Wenn ich in einer Woche drei Prototypen bauen kann statt einen in drei Wochen, muss ich auch dreimal so oft entscheiden, ob das, was vor mir liegt, das richtige Problem löst.
+Als Product Manager war es schon immer mein Job, herauszuarbeiten, wo der größte Wert entsteht. Was sich ändert, ist die Masse und Taktung: Die reinen Implementierungskosten einer falschen Idee sind massiv gesunken — aber die Frequenz der Entscheidungen ist explodiert. Wenn ich selbst in einer Woche drei Prototypen bauen kann statt einen in drei Monaten, oder Kollegen plötzlich im Akkord ungetestete Features raushauen, muss der Filter davor umso kompromissloser greifen.
 
-Die Validierung und Priorisierung verbleibt in meiner Domäne. Nicht weil ich Technologie nicht verstehe, sondern weil die relevante Frage nie technisch war. Sie war immer: Lösen wir das richtige Problem? Für wen? Und ist die Lösung, die wir gewählt haben, tatsächlich der effizienteste Weg — oder haben wir nur ein GPT-API in eine hübsche Oberfläche verpackt, weil es alle anderen auch tun?
+Genau deshalb verbleibt die Validierung und vor allem die Wirtschaftlichkeitsrechnung zwingend in der Domäne eines PMs. Die Kernfrage war nämlich nie eine rein technische. Sie lautete schon immer: Lösen wir das richtige Problem? Rechnet sich die Lösung? Es reicht nicht mehr, nur die Entwicklungszeit zu schätzen. Der PM muss heute die klassischen FTE-Kosten gegen Token-Usage und laufende Inferenz-Kosten abwägen, um den tatsächlichen Return eines Features knallhart zu messen. Ist dieser Weg wirklich der effizienteste oder haben wir nur eine teure GPT-API in ein hübsches Interface verpackt, weil der Markt es gerade verlangt?
 
 Unternehmen suchen keine Leute, die genau das tun. Sie suchen Leute, die fragen: Was ist das eigentliche Problem, und ist ein LLM überhaupt der effizienteste Weg, es zu lösen?
 
+Unternehmen, die in die Zukunft schauen, brauchen keine PMs, die einfach nur bauen oder plumpe Ideen durchwinken. Sie suchen Wissensarbeiter, die rigoros hinterfragen, ob ein LLM technologisch und wirtschaftlich überhaupt die richtige Antwort auf das eigentliche Problem ist.
+
 ## 2. Agent-Orchestrierung wird zur Kernkompetenz
 
-In der agentischen Coding-Welt reicht es nicht, Anforderungen zu formulieren und auf Ergebnisse zu warten. Ich muss verstehen, wie Multi-Agenten-Systeme funktionieren, die Coding, Compliance, Security und Dokumentation automatisiert übernehmen. Nicht, weil ich sie selbst programmiere — sondern weil ich sie steuere, ihre Ergebnisse bewerte und ihre Grenzen kenne.
+In der agentischen Welt reicht es nicht, Anforderungen zu formulieren und auf Ergebnisse zu warten. Ich muss im Kern verstehen, wie Multi-Agenten-Systeme funktionieren, die Aufgaben wie Coding, Compliance, Security und Dokumentation zunehmend automatisiert übernehmen. Ich muss sie steuern, ihre Grenzen kennen und ihre Ergebnisse kritisch bewerten können.
 
-Das klingt nach einer technischen Aufgabe. Ist es aber nur oberflächlich. Im Kern ist es die gleiche Arbeit, die ein PM schon immer gemacht hat: Orchestrierung. Nur dass ich nicht mehr ausschließlich Menschen orchestriere, sondern Menschen und Agenten. Ich muss wissen, wann ich einen Agenten loslasse und wann ich einen Menschen einschalte. Ich muss einschätzen, wo Automatisierung Wert erzeugt und wo sie Risiko produziert.
+Das klingt vielleicht nach einer zutiefst technischen Aufgabe. Ist es aber nicht. Es ist die gleiche Arbeit, die einen guten PM schon immer ausgemacht hat: Orchestrierung. Der Unterschied ist lediglich das Ensemble. Ich dirigiere nicht mehr ausschließlich Menschen, sondern hybride Teams aus Menschen und Agenten. Ich muss wissen, wann ich einen Agenten von der Leine lasse und wann zwingend ein Mensch eingreifen muss. Ich muss evaluieren, wo Automatisierung echten Wert schöpft und wo sie unkalkulierbare Risiken produziert.
 
-Menschliche Verantwortung und Rechenschaft bleiben dabei der zentrale Aspekt. Ein Agent trifft keine Entscheidung — er führt aus. Die Verantwortung für das, was ausgeführt wird, liegt beim Menschen. Und im Produktkontext liegt sie beim PM.
+Am Ende bleibt ein Aspekt völlig unangetastet: die Rechenschaftspflicht. Ein Agent trifft keine strategischen Entscheidungen. Er führt aus. Die Verantwortung für das, was produziert wird, trägt der Mensch. Im Produktkontext liegt diese Verantwortung beim PM.
 
-Strong DM gibt seinen Engineers vor, täglich Tokens im Gegenwert ihres Tagessatzes zu verbrauchen — rund 1.000 Dollar am Tag. Das ist keine Spielerei. Das ist eine organisatorische Entscheidung, die zeigt, wie fundamental KI die Operationen eines Unternehmens verändern kann. PMs, die das nicht verstehen, werden Roadmaps schreiben, die an der Realität der eigenen Organisation vorbei gehen.
+Strong DM gibt seinen Engineers vor, täglich Tokens im Gegenwert ihres Tagessatzes zu verbrauchen — rund 1.000 Dollar am Tag pro Kopf. Das ist keine technologische Spielerei, sondern eine gewaltige Umwälzung der operativen Realität. Wer als PM dieses rohe, teure Potenzial nicht präzise orchestrieren kann und Agenten in die falsche Richtung rennen lässt, verbrennt Geld für völlig wertlosen Output. PMs, die das nicht verstehen, schreiben Roadmaps, die krachend an der Realität der eigenen Organisation vorbei laufen.
 
 ## 3. Der Verlust der Juniors kostet uns die Zukunft
 
-Hier wird es unbequem. Die Einsparungen bei Junior-Arbeit, die wir heute feiern, haben Folgen für morgen. Wenn ein LLM die Marktanalyse schreibt, den ersten Angebotsentwurf verfasst und die Wettbewerbsrecherche zusammenfasst — woran wächst dann der Junior?
+Hier wird es unbequem: Die vermeintlichen Kosteneinsparungen durch den Abbau von Junior-Rollen haben einen blinden Fleck. Wir feiern die gewonnene Effizienz, weil die Maschine vermeintlich billig produziert. Wer im Blindflug massenhaft Tokens verfeuert und mangels kritischer Prüfung die falschen Features auf die Straße bringt, verbrennt am Ende massiv Kapital, verliert das Vertrauen beim Kunden und schadet seiner Marke. Doch der weitaus teurere Fehler ist ein anderer: Im Rausch streichen wir systematisch das kritische Denken von morgen aus dem Unternehmen. Wenn ein LLM die Marktanalyse schreibt, Kunden-Insights synthetisiert und den Wettbewerb recherchiert an welchen Aufgaben wächst dann noch der Junior?
 
-Die Antwort ist nicht, dass Juniors überflüssig werden. Die Antwort ist, dass sich ihre Aufgabe verlagert: vom Produzieren zum Urteilen. Ein Junior schreibt nicht mehr die gesamte Marktanalyse — aber er bewertet, welche von drei KI-generierten Fassungen die relevantere für einen spezifischen Kunden ist, und erklärt warum. Er verfasst nicht mehr den ersten Entwurf eines Angebots — aber er redigiert den KI-Entwurf und entscheidet, was fehlt.
+Die Antwort lautet nicht, dass Juniors durch KI überflüssig werden. Ein Junior schreibt eine Marktanalyse heute nicht mehr von Grund auf neu. Aber er muss argumentieren können, welche von drei KI-generierten Varianten für einen spezifischen Business Case strategisch die beste ist. Er redigiert, gewichtet und entscheidet, was in der maschinellen Produktion fehlt: der unternehmerische und gesellschaftliche Kontext.
 
-Dieses Urteilen ist exakt das, was den Junior zum Senior macht. Und wenn wir ihm diese Gelegenheit nehmen, weil die KI schneller produziert, dann sparen wir heute Kosten und bezahlen morgen mit fehlendem Urteilsvermögen in unseren Teams. Uns fehlen dann junge Perspektiven, junges Wissen und jene junge Waghalsigkeit für Innovation, die eine KI nicht entwickeln kann — weil sie nur reproduziert, was bereits dokumentiert ist.
+Dieses Abwägen und Bewerten ist das, was den Junior überhaupt erst zum fähigen Senior macht. Doch aktuell passiert etwas viel Fataleres. Die Rolle wandelt sich nicht, sie wird schlichtweg wegrationalisiert. Wer heute den Junior aus der Organisation streicht, weil die Maschine vordergründig billiger produziert, kappt die Pipeline seiner eigenen Zukunft. Wir bezahlen diese kurzsichtige Einsparung morgen mit einem dramatischen Mangel an Entscheidern, Orchestratoren und echten Innovatoren. Wenn uns der Nachwuchs fehlt, fehlt uns die menschliche Intuition und jene Kreativität, die kein LLM jemals entwickeln kann, weil Algorithmen naturgemäß nur auf historischen Daten Wahrscheinlichkeiten reproduzieren können.
 
-## Was das für PMs auf Jobsuche bedeutet
+## Das kritische AI-Mindset als Haltung
 
-Der Markt hat diese Verschiebung bereits aufgenommen. Unternehmen wollen in Interviews nicht mehr hören, welche Stationen du durchlaufen hast. Sie wollen sehen, wie du Probleme löst. Sie wollen das AI-Mindset sehen — nicht als Buzzword, sondern als Arbeitshaltung.
+Der Markt hat diese Verschiebung der Wertschöpfungskette bereits eingepreist. Unternehmen wollen in Zukunft nicht mehr hören, welche agilen Frameworks du theoretisch beherrschst. Sie wollen sehen, wie du in dieser neuen Realität der unendlichen Velocity echte Probleme löst. Sie suchen ein AI-Mindset — nicht als leeres Buzzword, sondern als gelebte, kritische Arbeitshaltung. Konkret bedeutet das drei Dinge:
 
-Konkret bedeutet das drei Dinge:
+**Kannst du als Filter agieren?** Es geht nicht mehr darum, ob du ein Tool bedienen kannst. Es geht darum, ob du dich rasant in neue Domänen eindenken und den massiven, maschinellen Output rigoros auf seinen echten Business-Wert überprüfen kannst.
 
-**Kannst du schnell lernen?** Nicht ob du ein Framework kennst, sondern ob du in der Lage bist, dich in eine neue Domäne einzuarbeiten und dort sinnvolle Entscheidungen zu treffen.
+**Denkst du in First Principles?** Wer heute Standardlösungen abguckt, wird von der KI überholt. Die Kunst liegt darin, die Grundlogik eines Problems zu durchdringen, sich nicht von der schnellen "Citizen Developer"-Welle blenden zu lassen und einen eigenen, wirtschaftlich tragfähigen Pfad einzuschlagen.
 
-**Kannst du in First Principles denken?** Nicht abgucken, was der Standard ist, sondern die Logiken und Probleme verstehen und einen eigenen Pfad einschlagen. Der PM muss hier die Balance finden zwischen inkrementellen Verbesserungen und den kritischen Fragen, die Probleme der Zukunft identifizieren.
+**Orchestrierst du das große Ganze?** Bringst du das ganzheitliche Denken an den Tisch, das der Maschine bei all ihrer Rechenleistung fehlt? Ein LLM kann Token-Economics zwar blitzschnell gegen FTE-Kosten ausrechnen, aber die strategische Einordnung dieser Zahlen, das empathische Kundenverständnis, die hybride Steuerung von Agent-Mensch-Teams und die generalistische Klammer über das Business verlangen einen menschlichen Orchestrator.
 
-**Kannst du Skills ins Unternehmen bringen, die es noch nicht hat?** Agentische Workflows zum Beispiel. Oder Markt- und Kundenverständnis, Orchestrierung von Teams, das Wissen, wann man Menschen fordert und wann man sie unterstützt, generalistische Arbeit über UX Research, Design, Conversion und Product-Market-Fit hinweg.
+Zeig, wie du heute ein Problem rigoros filterst, shippst und kommerzialisierst. Du musst kein KI-Entwickler sein. Deine Aufgabe ist es, das Unternehmen durch kritisches Denken strategisch zu komplementieren.
 
-Erzähle keine alten Stories. Recherchiere die heutigen Challenges des Unternehmens, analysiere, wie du etwas shippen und kommerzialisieren würdest, und demonstriere damit, dass du mental den Job bereits angefangen hast. Demonstriere Live-Thinking statt polierter Retrospektiven.
+## Die eigentliche Daseinsberechtigung
 
-Der Titel ist dabei egal. Wichtig ist, ob die Arbeit dich besser macht. Und die ehrlichste Frage vor jedem Wechsel lautet: Was will ich in meiner nächsten Rolle, das ich heute nicht habe? Du bist kein KI-Experte — und das ist auch nicht der Punkt. Du hast andere Qualitäten, mit denen du das Unternehmen komplementierst.
+Entscheidungskompetenz gab es logischerweise schon vor LLMs. Neu ist das extreme Paradoxon der Kosten: Die reine Umsetzung einer Idee kostet vermeintlich nichts mehr. Doch gerade weil jeder alles in Rekordzeit bauen kann, verliert die pure Geschwindigkeit an Wert.
 
-## Die eigentliche Frage
+Wenn alle schnell sind, gewinnt nicht der Schnellste. Es gewinnt derjenige, der das Richtige baut.
 
-Entscheidungskompetenz gab es schon vor LLMs. Was sich verändert hat, sind die Kosten einer Fehlentscheidung bei der Umsetzung — sie sind dramatisch gesunken. Gleichzeitig ist die Geschwindigkeit gestiegen, mit der Entscheidungen getroffen und umgesetzt werden können.
+Dies herauszufiltern — ohne fertiges Template, dafür mit Urteilsvermögen, Kundennähe und der Bereitschaft, die eigene Hypothese zu falsifizieren — bleibt die unangetastete Kernaufgabe eines Product Managers.
 
-Das macht die Qualität der Entscheidung selbst nicht weniger wichtig. Im Gegenteil. Wenn jeder schnell bauen kann, gewinnt, wer das Richtige baut. Und das herauszuarbeiten — nicht mit einem Framework, nicht mit einem Template, sondern mit Urteilsvermögen, Kundennähe und der Bereitschaft, die eigene Hypothese zu falsifizieren — das bleibt die Arbeit eines Product Managers.
-
-Kein LLM nimmt uns diese Arbeit ab. Und das ist kein Defizit der Technologie. Es ist der Grund, warum es uns gibt.
+Kein LLM der Welt nimmt uns diese Arbeit ab. Das ist kein Defizit der Technologie. Es ist der exakte Grund, warum es unsere Rolle gibt.

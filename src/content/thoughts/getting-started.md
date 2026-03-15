@@ -18,4 +18,4 @@ Mostly short pieces about:
 - **AI and LLMs** — what I'm experimenting with
 - **Tools and workflows** — things that make me more productive
 
-Nothing polished. Just honest thinking.
+Nothing polished. Just thinking.

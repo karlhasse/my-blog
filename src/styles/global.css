@@ -159,6 +159,32 @@ footer {
   color: #999;
 }
 
+.footnotes {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #555;
+}
+
+.footnotes ol {
+  padding-left: 20px;
+}
+
+.footnotes li {
+  margin-bottom: 8px;
+}
+
+[data-footnote-ref] {
+  font-size: 12px;
+  vertical-align: super;
+  text-decoration: none;
+}
+
+[data-footnote-backref] {
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 40px 16px;

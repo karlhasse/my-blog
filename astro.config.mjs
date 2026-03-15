@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import remarkGfm from 'remark-gfm';
 
 import cloudflare from "@astrojs/cloudflare";
 
@@ -7,4 +8,7 @@ import cloudflare from "@astrojs/cloudflare";
 export default defineConfig({
   site: "https://example.com",
   adapter: cloudflare(),
+  markdown: {
+    remarkPlugins: [remarkGfm],
+  },
 });

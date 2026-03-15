@@ -1,5 +1,5 @@
 ---
-title: "Code ist nicht mehr der Bottleneck — Entscheidungen sind es"
+title: "Wenn Code nichts mehr kostet, wird das Urteilsvermögen unbezahlbar"
 date: 2026-03-14
 description: "Warum die strategische Kompetenz des Product Managers nicht im Bauen liegt, sondern (immer noch) im Entscheiden, was gebaut werden soll."
 ---

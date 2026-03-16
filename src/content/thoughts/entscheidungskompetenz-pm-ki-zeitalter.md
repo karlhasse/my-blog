@@ -4,9 +4,9 @@ date: 2026-03-14
 description: "Warum die strategische Kompetenz des Product Managers nicht im Bauen liegt, sondern (immer noch) im Entscheiden, was gebaut werden soll."
 ---
 
-Ein LLM schreibt heute funktionierenden Code in Minuten. Firmen wie Strong DM verbieten ihren Engineers, Code selbst zu schreiben oder zu reviewen[^1]. Agenten nehmen menschenverfasste Roadmaps, gießen sie in Software und testen sie in simulierten Umgebungen. Die technische Umsetzung ist kein finanzielles und zeitliches Bottleneck mehr.
+Ein LLM schreibt heute funktionierenden Code in Minuten. Firmen wie Strong DM verbieten ihren Engineers, Code selbst zu schreiben oder zu reviewen[^1]. Agenten nehmen menschenverfasste Roadmaps, gießen sie in Software und testen sie in simulierten Umgebungen. Die technische Umsetzung ist kein Bottleneck mehr.
 
-Genau deshalb verschiebt sich der Wert entlang der gesamten Wertschöpfungskette und zwar weg vom Code, hin zur Entscheidung darüber, was überhaupt gebaut werden soll. Weil die Velocity des Outputs steigt, muss der Filter davor umso konsequenter greifen. Auf einmal strömen Gewerke wie Marketing oder Sales mit selbstgebastelten Lösungen ins Meeting: ohne überprüfbare Hypothesen, saubere Problem-Identifikation oder einen Blick für die Business Viability. Der Product Manager (PM) muss wachsamer evaluieren und argumentieren als je zuvor. Diese Entscheidungs- und Führungskompetenz wird zur dominanten strategischen Fähigkeit. Für PMs bedeutet das: die Rolle wird nicht kleiner oder gar obsolet. Sie wird noch kritischer.
+Genau deshalb verschiebt sich der Wert entlang der gesamten Wertschöpfungskette und zwar weg vom Code, hin zur Entscheidung darüber, was überhaupt gebaut werden soll. Weil die Velocity des Outputs steigt, muss der Filter davor umso konsequenter greifen. Auf einmal strömen Gewerke wie Marketing oder Sales mit selbstgebastelten Lösungen ins Meeting: ohne überprüfbare Hypothesen, saubere Problem-Identifikation oder einen Blick für die Business Viability. Der Product Manager (PM) muss wachsamer evaluieren und argumentieren als je zuvor. Diese Entscheidungs- und Führungskompetenz wird zur strategischen Fähigkeit. Für PMs bedeutet das: die Rolle wird nicht kleiner oder obsolet. Sie wird kritischer.
 
 ## Drei Konsequenzen, die daraus folgen
 
@@ -14,16 +14,16 @@ Wenn Implementierung billig wird, werden drei Dinge unbezahlbar teuer: schlechte
 
 ## 1. Der PM entscheidet, das LLM implementiert
 
-Als Product Manager war es schon immer mein Job, herauszuarbeiten, wo der größte Wert entsteht. Was sich ändert, ist die Masse und Taktung: Die reinen Implementierungskosten einer falschen Idee sind massiv gesunken — aber die Frequenz der Entscheidungen ist explodiert. Wenn ich selbst in einer Woche drei Prototypen bauen kann statt einen in drei Monaten, oder Kollegen plötzlich im Akkord ungetestete Features raushauen, muss der Filter davor umso kompromissloser greifen.
+Als Product Manager war es schon immer mein Job, herauszuarbeiten, wo der größte Wert entsteht. Was sich ändert, ist die Masse und Taktung: Die reinen Implementierungskosten einer falschen Idee sind massiv gesunken — aber die Frequenz der Entscheidungen ist gewachsen. Wenn ich selbst in einer Woche drei Prototypen bauen kann statt einen in drei Monaten oder Kollegen plötzlich ungetestete Feature-Ideen raushauen, muss der Filter davor umso kompromissloser greifen.
 
-Genau deshalb verbleibt die Validierung und vor allem die Wirtschaftlichkeitsrechnung zwingend in der Domäne eines PMs. Die Kernfrage war nämlich nie eine rein technische. Sie lautete schon immer: Lösen wir das richtige Problem? Rechnet sich die Lösung? Es reicht nicht mehr, nur die Entwicklungszeit zu schätzen. Der PM muss heute die klassischen FTE-Kosten gegen Token-Usage und laufende Inferenz-Kosten abwägen, um den tatsächlichen Return eines Features zu messen. Ist dieser Weg wirklich der effizienteste oder haben wir nur eine teure GPT-API in ein hübsches Interface verpackt, weil der Markt es gerade verlangt?
+Genau deshalb verbleibt die Validierung und vor allem die Wirtschaftlichkeitsrechnung in der Domäne eines PMs. Die Kernfrage lautete schon immer: Lösen wir das richtige Problem? Rechnet sich die Lösung? Es reichte noch nie, nur die Entwicklungszeit zu schätzen. Der PM muss die klassischen FTE-Kosten gegen Token-Usage und laufende Inferenz-Kosten abwägen, um den tatsächlichen Return eines Features zu messen. Ist dieser Weg wirklich der effizienteste oder haben wir nur eine teure GPT-API in ein hübsches Interface verpackt, weil der Markt es gerade verlangt?
 
-Unternehmen suchen keine Leute, die genau das tun. Sie suchen Leute, die fragen: Was ist das eigentliche Problem, und ist ein LLM überhaupt der effizienteste Weg, es zu lösen?
-Unternehmen suchen Wissensarbeiter, die rigoros hinterfragen, ob ein LLM technologisch und wirtschaftlich überhaupt die richtige Antwort auf das eigentliche Problem ist.
+Unternehmen suchen Leute, die fragen: Was ist das eigentliche Problem und ist ein LLM oder Output X überhaupt der effizienteste Weg, es zu lösen?
+Unternehmen suchen Wissensarbeiter, die hinterfragen, ob ein LLM technologisch und wirtschaftlich überhaupt die richtige Antwort auf das eigentliche Problem ist.
 
 ## 2. Agent-Orchestrierung wird zur Kernkompetenz
 
-In der agentischen Welt reicht es nicht, Anforderungen zu formulieren und auf Ergebnisse zu warten. Ich muss im Kern verstehen, wie Multi-Agenten-Systeme funktionieren, die Aufgaben wie Coding, Compliance, Security und Dokumentation zunehmend automatisiert übernehmen. Ich muss sie steuern, ihre Grenzen kennen und ihre Ergebnisse kritisch bewerten können.
+In einer agentischen Welt reicht es nicht mehr, bloß Anforderungen zu definieren und auf Ergebnisse zu warten. Auf institutioneller Ebene ist eine völlig neue Kompetenz gefragt: die Fähigkeit, das Signal vom Rauschen zu trennen und Prozesse so zu gestalten, dass sie definiert, deterministisch und auditierbar bleiben[^2]. Wer Multi-Agenten-Systeme einsetzt, die Design, Coding, Compliance und Security zunehmend autonom erledigen, muss deren Architektur im Kern durchdringen. Ich muss diese Systeme orchestrieren, ihre Ergebnisse kritisch validieren und ihre systemischen Grenzen kennen. Denn isoliert produktive Akteure schaffen noch keine produktive Organisation.
 
 Das klingt vielleicht nach einer zutiefst technischen Aufgabe. Ist es aber nicht. Es ist die gleiche Arbeit, die einen guten PM schon immer ausgemacht hat: Orchestrierung. Der Unterschied ist lediglich das Ensemble. Ich dirigiere nicht mehr ausschließlich Menschen, sondern hybride Teams aus Menschen und Agenten. Ich muss wissen, wann ich einen Agenten von der Leine lasse und wann ein Mensch eingreifen muss. Ich muss evaluieren, wo Automatisierung echten Wert schöpft und wo sie unkalkulierbare Risiken produziert.
 
@@ -62,3 +62,4 @@ Dies herauszufiltern — ohne fertiges Template, dafür mit Urteilsvermögen, Ku
 Kein LLM der Welt nimmt uns diese Arbeit ab. Das ist kein Defizit der Technologie. Es ist der exakte Grund, warum es unsere Rolle gibt.
 
 [^1]: Strong DM (2026) — https://factory.strongdm.ai/
+[^2]: a16z (2025) — https://www.a16z.news/p/institutional-ai-vs-individual-ai

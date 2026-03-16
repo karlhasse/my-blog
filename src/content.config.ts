@@ -11,4 +11,15 @@ const thoughts = defineCollection({
   }),
 });
 
-export const collections = { thoughts };
+const noslop = defineCollection({
+  loader: glob({ base: "./src/content/noslop", pattern: "**/*.md" }),
+  schema: z.object({
+    title: z.string(),
+    date: z.coerce.date(),
+    image: z.string().optional(),
+    url: z.string().optional(),
+    type: z.enum(["image", "link", "photo"]).default("image"),
+  }),
+});
+
+export const collections = { thoughts, noslop };

@@ -202,6 +202,40 @@ footer {
   text-decoration: none;
 }
 
+/* No Slop page */
+.noslop-header {
+  max-width: 600px;
+}
+
+.noslop-feed {
+  margin-top: 60px;
+  width: 90vw;
+  max-width: 900px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.noslop-item {
+  margin-bottom: 80px;
+}
+
+.noslop-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.noslop-caption {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #999;
+}
+
+.noslop-caption p {
+  margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 40px 16px;
@@ -217,5 +251,14 @@ footer {
 
   h2 {
     font-size: 20px;
+  }
+
+  .noslop-feed {
+    width: 100vw;
+    padding: 0 16px;
+  }
+
+  .noslop-item {
+    margin-bottom: 50px;
   }
 }

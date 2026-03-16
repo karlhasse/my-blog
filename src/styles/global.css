@@ -36,6 +36,7 @@ nav a {
 }
 
 nav a:hover {
+  color: #333;
   text-decoration: underline;
 }
 
@@ -179,10 +180,22 @@ footer {
   margin-bottom: 8px;
 }
 
+.footnotes a {
+  color: #FFBF00;
+}
+
+.footnotes a:hover {
+  color: #e6ac00;
+}
+
 [data-footnote-ref] {
-  font-size: 12px;
-  vertical-align: super;
+  font-size: 0.75em;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.5em;
+  line-height: 0;
   text-decoration: none;
+  color: #FFBF00;
 }
 
 [data-footnote-backref] {

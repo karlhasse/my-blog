@@ -27,58 +27,33 @@ const { Content } = await render(post);
     <Content />
   </article>
 
-  <a href="#" class="scroll-top" aria-label="Scroll to top">
-    <span class="scroll-top-arrow">↑</span>
-    <span class="scroll-top-text">Top</span>
-  </a>
+  <div class="scroll-top-wrapper">
+    <a href="#" class="scroll-top" aria-label="Scroll to top">
+      ↑ Top
+    </a>
+  </div>
 </Base>
 
 <style>
-  .scroll-top {
-    position: fixed;
-    bottom: 32px;
-    right: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
-    text-decoration: none;
-    color: #999;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s;
+  .scroll-top-wrapper {
+    margin-top: 20px;
+    text-align: right;
   }
 
-  .scroll-top.visible {
-    opacity: 1;
-    pointer-events: auto;
+  .scroll-top {
+    font-size: 13px;
+    color: #999;
+    text-decoration: none;
   }
 
   .scroll-top:hover {
     color: #333;
   }
-
-  .scroll-top-arrow {
-    font-size: 18px;
-    line-height: 1;
-  }
-
-  .scroll-top-text {
-    font-size: 11px;
-    letter-spacing: 0.05em;
-  }
 </style>
 
 <script>
-  const el = document.querySelector('.scroll-top');
-  if (el) {
-    window.addEventListener('scroll', () => {
-      el.classList.toggle('visible', window.scrollY > 400);
-    }, { passive: true });
-
-    el.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
+  document.querySelector('.scroll-top')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 </script>

@@ -5,20 +5,10 @@ import { getCollection, render } from "astro:content";
 const items = await getCollection("schoengeist");
 items.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
 
-// Deterministic pseudo-random from index for scattered positioning
-function scatter(index: number) {
-  const seed = ((index + 1) * 7919) % 100;
-  const widths = [45, 55, 38, 62, 50, 42, 58, 35, 65, 48];
-  const width = widths[index % widths.length];
-  const maxOffset = 100 - width;
-  const offset = Math.floor((seed / 100) * maxOffset);
-  return { width, offset };
-}
-
 const rendered = await Promise.all(
-  items.map(async (item, i) => {
+  items.map(async (item) => {
     const { Content } = await render(item);
-    return { item, Content, ...scatter(i) };
+    return { item, Content };
   })
 );
 ---
@@ -29,16 +19,30 @@ const rendered = await Promise.all(
     <p>A curated slop-free collection of things I genuinely enjoy.</p>
   </div>
 
-  <div class="schoengeist-feed">
-    {rendered.map(({ item, Content, width, offset }) => (
-      <div class="schoengeist-item" style={`width: ${width}%; margin-left: ${offset}%;`}>
-        {item.data.image && (
+  {rendered.length > 1 && (
+    <button class="shuffle-btn" id="shuffle-btn">Shuffle</button>
+  )}
+
+  <div class="schoengeist-feed" id="schoengeist-feed">
+    {rendered.map(({ item, Content }, i) => (
+      <div class="schoengeist-item" data-index={i} style="display:none">
+        {item.data.image ? (
           item.data.url ? (
             <a href={item.data.url} target="_blank" rel="noopener">
-              <img src={item.data.image} alt={item.data.title} loading="lazy" />
+              <img data-src={item.data.image} alt={item.data.title} />
             </a>
           ) : (
-            <img src={item.data.image} alt={item.data.title} loading="lazy" />
+            <img data-src={item.data.image} alt={item.data.title} />
+          )
+        ) : item.data.color && (
+          item.data.url ? (
+            <a href={item.data.url} target="_blank" rel="noopener" class="color-block" style={`background:${item.data.color}`}>
+              <span class="color-block-title">{item.data.title}</span>
+            </a>
+          ) : (
+            <div class="color-block" style={`background:${item.data.color}`}>
+              <span class="color-block-title">{item.data.title}</span>
+            </div>
           )
         )}
         <div class="schoengeist-caption">
@@ -47,4 +51,30 @@ const rendered = await Promise.all(
       </div>
     ))}
   </div>
+
+  <script>
+    const items = document.querySelectorAll<HTMLElement>('.schoengeist-item');
+    let current = -1;
+
+    function show(index: number) {
+      if (current >= 0) items[current].style.display = 'none';
+      const item = items[index];
+      const img = item.querySelector<HTMLImageElement>('img[data-src]');
+      if (img) {
+        img.src = img.dataset.src!;
+        img.removeAttribute('data-src');
+      }
+      item.style.display = '';
+      current = index;
+    }
+
+    show(Math.floor(Math.random() * items.length));
+
+    document.getElementById('shuffle-btn')?.addEventListener('click', () => {
+      if (items.length < 2) return;
+      let next: number;
+      do { next = Math.floor(Math.random() * items.length); } while (next === current);
+      show(next);
+    });
+  </script>
 </Base>

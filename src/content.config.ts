@@ -17,6 +17,7 @@ const schoengeist = defineCollection({
     title: z.string(),
     date: z.coerce.date(),
     image: z.string().optional(),
+    color: z.string().optional(),
     url: z.string().optional(),
     type: z.enum(["image", "link", "photo"]).default("image"),
   }),

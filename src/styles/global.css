@@ -207,22 +207,49 @@ footer {
   max-width: 600px;
 }
 
-.schoengeist-feed {
-  margin-top: 60px;
-  width: 90vw;
-  max-width: 900px;
-  margin-left: 50%;
-  transform: translateX(-50%);
+.shuffle-btn {
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding: 8px 20px;
+  background: #FFBF00;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.schoengeist-item {
-  margin-bottom: 80px;
+.shuffle-btn:hover {
+  background: #e6ac00;
+}
+
+.schoengeist-feed {
+  margin-top: 0;
 }
 
 .schoengeist-item img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.color-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 3;
+  text-decoration: none;
+}
+
+.color-block-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #202020;
+  text-align: center;
+  padding: 40px;
+  line-height: 1.4;
 }
 
 .schoengeist-caption {
@@ -253,12 +280,4 @@ footer {
     font-size: 20px;
   }
 
-  .schoengeist-feed {
-    width: 100vw;
-    padding: 0 16px;
-  }
-
-  .schoengeist-item {
-    margin-bottom: 50px;
-  }
 }

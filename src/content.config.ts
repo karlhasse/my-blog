@@ -11,8 +11,8 @@ const thoughts = defineCollection({
   }),
 });
 
-const noslop = defineCollection({
-  loader: glob({ base: "./src/content/noslop", pattern: "**/*.md" }),
+const schoengeist = defineCollection({
+  loader: glob({ base: "./src/content/schoengeist", pattern: "**/*.md" }),
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
@@ -22,4 +22,4 @@ const noslop = defineCollection({
   }),
 });
 
-export const collections = { thoughts, noslop };
+export const collections = { thoughts, schoengeist };

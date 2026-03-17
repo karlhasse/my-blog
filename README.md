@@ -36,11 +36,11 @@ The dev server runs at `http://localhost:4321`.
 src/
 ├── content/
 │   ├── thoughts/       # Blog posts (Markdown)
-│   └── noslop/         # Curated collection entries
+│   └── schoengeist/    # Curated collection entries
 ├── pages/
 │   ├── index.astro     # Home
 │   ├── bio.astro       # About
-│   ├── no-slop.astro   # Curated collection
+│   ├── schoengeist.astro # Curated collection
 │   └── thoughts/       # Blog listing & dynamic routes
 ├── layouts/
 │   └── Base.astro      # Main layout
@@ -64,7 +64,7 @@ pubDate: 2026-03-01
 Your content here.
 ```
 
-The "No Slop" collection in `src/content/noslop/` is a hand-curated, AI-free set of things worth sharing.
+The Schoengeist collection in `src/content/schoengeist/` is a hand-curated, slop-free set of things worth sharing. Images should be uploaded as `.webp` to keep loading times fast.
 
 ## Deployment
 

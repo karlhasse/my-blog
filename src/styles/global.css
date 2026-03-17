@@ -202,12 +202,12 @@ footer {
   text-decoration: none;
 }
 
-/* No Slop page */
-.noslop-header {
+/* Schoengeist page */
+.schoengeist-header {
   max-width: 600px;
 }
 
-.noslop-feed {
+.schoengeist-feed {
   margin-top: 60px;
   width: 90vw;
   max-width: 900px;
@@ -215,24 +215,24 @@ footer {
   transform: translateX(-50%);
 }
 
-.noslop-item {
+.schoengeist-item {
   margin-bottom: 80px;
 }
 
-.noslop-item img {
+.schoengeist-item img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.noslop-caption {
+.schoengeist-caption {
   margin-top: 8px;
   font-size: 13px;
   line-height: 1.5;
   color: #999;
 }
 
-.noslop-caption p {
+.schoengeist-caption p {
   margin-bottom: 0;
 }
 
@@ -253,12 +253,12 @@ footer {
     font-size: 20px;
   }
 
-  .noslop-feed {
+  .schoengeist-feed {
     width: 100vw;
     padding: 0 16px;
   }
 
-  .noslop-item {
+  .schoengeist-item {
     margin-bottom: 50px;
   }
 }

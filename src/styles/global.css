@@ -211,10 +211,10 @@ footer {
   margin-top: 0;
   margin-bottom: 40px;
   padding: 8px 20px;
-  background: #FFBF00;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 0;
   font-family: inherit;
   font-size: 15px;
   font-weight: 600;
@@ -222,7 +222,7 @@ footer {
 }
 
 .shuffle-btn:hover {
-  background: #e6ac00;
+  background: #f5f5f5;
 }
 
 .schoengeist-feed {

@@ -1,4 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" fill="#000"/>
-  <text x="16" y="23" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="18" fill="#fff" text-anchor="middle">AG</text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1.580247,0,0,1.765517,-131.160494,-61.793103)">
+        <rect x="83" y="35" width="324" height="290" style="fill:white;"/>
+    </g>
+    <g transform="matrix(-1.784388,0,-0,-1.784388,555.55813,667.046819)">
+        <path d="M222.366,353L210.101,307.097L125.653,307.097L113.389,353L40.504,353L118.645,107.715L216.759,107.715L295.25,353L222.366,353ZM196.786,257.339L180.667,197.419C177.163,184.804 174.944,174.292 174.009,165.882C173.075,157.473 172.491,147.661 172.257,136.448L162.446,136.448C162.446,147.194 161.979,156.83 161.044,165.357C160.11,173.883 158.007,184.571 154.737,197.419L138.969,257.339L196.786,257.339Z" style="fill:rgb(32,32,32);fill-rule:nonzero;"/>
+    </g>
 </svg>

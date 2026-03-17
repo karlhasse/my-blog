@@ -1,43 +1,75 @@
-# Astro Starter Kit: Minimal
+# my-blog
 
-```sh
-npm create astro@latest -- --template minimal
+Personal blog by Artur Gerke — writing about product, AI, and how technology shapes the way we work and live.
+
+## Tech Stack
+
+- [Astro](https://astro.build/) 6 — static site generator
+- [Cloudflare Workers](https://workers.cloudflare.com/) — hosting & SSR
+- TypeScript
+- Markdown with [remark-gfm](https://github.com/remarkjs/remark-gfm) (GitHub Flavored Markdown)
+
+## Getting Started
+
+**Prerequisites:** Node.js >= 22.12.0
+
+```bash
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+The dev server runs at `http://localhost:4321`.
 
-## 🚀 Project Structure
+## Commands
 
-Inside of your Astro project, you'll see the following folders and files:
+| Command                    | Description                          |
+| -------------------------- | ------------------------------------ |
+| `npm run dev`              | Start local dev server               |
+| `npm run build`            | Build to `./dist/`                   |
+| `npm run preview`          | Build and preview locally (wrangler) |
+| `npm run deploy`           | Build and deploy to Cloudflare       |
+| `npm run generate-types`   | Generate Cloudflare worker types     |
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+## Project Structure
+
+```
+src/
+├── content/
+│   ├── thoughts/       # Blog posts (Markdown)
+│   └── noslop/         # Curated collection entries
+├── pages/
+│   ├── index.astro     # Home
+│   ├── bio.astro       # About
+│   ├── no-slop.astro   # Curated collection
+│   └── thoughts/       # Blog listing & dynamic routes
+├── layouts/
+│   └── Base.astro      # Main layout
+├── styles/
+│   └── global.css      # Global styles
+└── content.config.ts   # Content collection schemas (Zod)
+public/                 # Static assets (images, favicon, headers)
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Content
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Blog posts live in `src/content/thoughts/` as Markdown files with frontmatter:
 
-Any static assets, like images, can be placed in the `public/` directory.
+```markdown
+---
+title: "Post Title"
+description: "A short description."
+pubDate: 2026-03-01
+---
 
-## 🧞 Commands
+Your content here.
+```
 
-All commands are run from the root of the project, from a terminal:
+The "No Slop" collection in `src/content/noslop/` is a hand-curated, AI-free set of things worth sharing.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Deployment
 
-## 👀 Want to learn more?
+The site deploys to Cloudflare Workers via `wrangler`. Run `npm run deploy` to build and publish.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## License
+
+All rights reserved.
